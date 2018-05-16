@@ -24,6 +24,14 @@ def k1(bot,update):
 	os.system("k1")
 	update.message.reply_text('k acıldı')
 
+def s0(bot,update):
+	os.system("s0")
+	update.message.reply_text('s kapandı')
+
+def s1(bot,update):
+	os.system("s1")
+	update.message.reply_text('s acıldı')
+
 def reboot(bot,update):
 	update.message.reply_text('restart atılıyor')
 	os.system("reboot")
@@ -120,6 +128,8 @@ updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 updater.dispatcher.add_handler(CommandHandler('k0', k0))
 updater.dispatcher.add_handler(CommandHandler('k1', k1))
+updater.dispatcher.add_handler(CommandHandler('s0', s0))
+updater.dispatcher.add_handler(CommandHandler('s1', s1))
 updater.dispatcher.add_handler(CommandHandler('mail', mail))
 updater.dispatcher.add_handler(CommandHandler('reboot', reboot))
 updater.dispatcher.add_handler(CommandHandler('dervis', dervis))
